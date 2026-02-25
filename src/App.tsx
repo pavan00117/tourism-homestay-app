@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Places from './pages/Places';
 import Homestays from './pages/Homestays';
 import HomestayDetails from './pages/HomestayDetails';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ const App: React.FC = () => {
             <Route path="/places" element={<Places />} />
             <Route path="/homestays" element={<Homestays />} />
             <Route path="/homestays/:id" element={<HomestayDetails />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
         </main>
         <Footer />
